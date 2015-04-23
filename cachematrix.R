@@ -3,9 +3,9 @@
 ##cacheSolve - if input is new calculates invers of matrix, else returns stored.
 
 #makeCacheMatrix - contains 4 functions.
-#get - returns original matrix stored in main function.
-#set - sets matrix in main function, nullifies inverse matrix stored.
-#setinverse - sets inverse matrix. is called by cacheSolve if input new matrix.
+#get - returns original matrix stored in parent env.
+#set - sets new matrix, nullifies inverse matrix stored in parent env.
+#setinverse - sets inverse matrix in parent env.
 #getinverse - returns inverse of matrix stored. 
 
 makeCacheMatrix <- function(x = matrix()) {
